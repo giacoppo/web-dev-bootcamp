@@ -1,0 +1,38 @@
+.wrapper {
+    display: inline-block;
+    width: 100%;
+    min-height: 200px;
+    float: left;
+}
+
+/* button {
+    float: left;
+} */
+
+div.fadeOut,
+div.fadeIn,
+div.fadeToggle,
+div.slideDown,
+div.slideUp,
+div.slideToggle {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    float: left;
+    margin: 20px;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.fadeIn {
+    display: none;
+}
+
+div.fadeToggle {
+    display: none;
+}
+
+div.slideDown {
+    display: none;
+}

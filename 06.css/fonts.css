@@ -1,0 +1,64 @@
+/* font-family */
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway:400,700');
+
+p {
+    font-family: Raleway;
+}
+
+h1 {
+    font-family: Indie Flower;
+}
+
+/* font-size */
+
+body {
+    font-size: 10px;
+}
+
+h1 {
+    /* font-size: 100px; */
+    font-size: 5.0em;
+}
+
+p {
+    /* font-size: 24px; */
+    font-size: 2.0em;
+}
+
+span {
+    font-size: 2.0em;
+}
+
+/* font-weight */
+
+p {
+    font-weight: normal;
+}
+
+/* line-height */
+
+p {
+    /* line-height: 1.5; */
+    line-height: 36px;
+}
+
+/* text-align */
+
+h1 {
+    text-align: right;
+}
+
+p {
+    text-align: center;
+}
+
+/* text-decoration */
+
+p {
+    text-decoration: underline;
+}
+
+h1 {
+    text-decoration: line-through;
+}
