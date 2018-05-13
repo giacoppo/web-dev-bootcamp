@@ -1,0 +1,23 @@
+{
+  "name": "movies-search-app",
+  "version": "1.0.0",
+  "description": "A Movies Search Node\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DNode JS Search Movies App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "movies",
+    "app",
+    "node",
+    "search"
+  ],
+  "author": "Alessandro",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
+}
