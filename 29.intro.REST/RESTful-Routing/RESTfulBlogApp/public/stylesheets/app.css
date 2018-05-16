@@ -1,0 +1,32 @@
+body {
+    margin-top: 7.0em;
+}
+
+i.icon {
+    font-size: 1.5em;
+}
+
+i.chevron {
+    font-size: 16px;
+}
+
+.content,
+.description {
+    margin-bottom: 1.0em;
+    margin-top: 0.5em;
+}
+
+#delete {
+    display: inline;
+}
+
+footer {
+    background-color: #555;
+    padding: 0.5em 0;
+    margin-top: 3em;
+    color: #fff;
+}
+
+p.footer-text {
+    margin: 1em 0;
+}
