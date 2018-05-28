@@ -1,0 +1,68 @@
+<% include ../partials/header %>
+
+<main role="main" class="mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <a href="/campgrounds">< Go Back</a>
+                </p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-2">
+                <p class="lead">YelpCamp</p>
+                <div class="list-group">
+                    <li class="list-group-item active">Info 1</li>
+                    <li class="list-group-item">Info 2</li>
+                    <li class="list-group-item">Info 3</li>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card mt-2">
+                    <img class="card-img-top" src="<%= campground.image %>" class="mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title float-left"><a href=""><%= campground.name %></a></h4>
+                        <h4 class="card-text float-right">$9.00/night</h4>
+                        <p class="card-text float-left"><%= campground.desc %></p>
+                        <p class="card-text author float-left">
+                            <small><em>&mdash; Submitted By <%= campground.author.username %></em>
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-light mt-3 mb-3">
+                    <% if(!currentUser) { %>
+                    <div class="card-header">
+                        <a class="btn btn-outline-primary float-left" href="/register">Sign Up</a>
+                        <a class="btn btn-success float-right" href="/login">Login to comment</a>
+                    </div>
+                    <% } else { %>
+                    <div class="card-header">
+                        <a class="btn btn-success float-right" href="/campgrounds/<%= campground._id %>/comments/new">Add New Comment</a>
+                    </div>
+                    <% } %>
+                    <!-- <h5 class="card-title">Light card title</h5> -->
+                    <% campground.comments.forEach(function(comment) { %>
+                    <div class="card-body custom">
+                        <p class="mb-0">
+                            <strong><%= comment.author.username %></strong>
+                            <span class="float-right">10 days ago</span>
+                        </p>
+                        <p class="mt-0"><%= comment.text %></p>
+                    </div>
+                    <% }) %>
+                    <% if(campground.comments == '') { %>
+                        <div class="card-body">
+                            <p>No comments yet!</p>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>        
+    </div>
+</main>
+
+<% include ../partials/footer %>

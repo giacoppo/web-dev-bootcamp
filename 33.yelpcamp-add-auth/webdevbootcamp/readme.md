@@ -119,3 +119,15 @@ CREATE  /campgrounds/:id/comments       POST
 ##Auth Pt. 3 - Login
 * Add login routes
 * Add login template
+
+##Auth Pt. 4 - Logout/Navbar
+* Add logout route
+* Prevent user from adding a comment if not signed in
+* Add links to navbar
+* Show/hide auth links correctly
+
+##Auth Pt. 5 - Show/Hide Links
+* Show/hide auth links in navbar correctly
+
+##Refactor the routes
+* Use Express router to reorganize all routes
