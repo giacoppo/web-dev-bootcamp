@@ -1,22 +1,49 @@
 <% include ./partials/header %>
 
 <main role="main">
-    <div class="container">
-        <h1>Sign Up!</h1>
-
-        <form action="/register" method="POST">
-            <div class="form-row">
-                <div class="col-xs-12 col-sm-5 mb-2">
-                    <input class="form-control" type="text" name="username" placeholder="username">
-                </div>
-                <div class="col-xs-12 col-sm-5 mb-2">
-                    <input class="form-control" type="password" name="password" placeholder="password">
-                </div>
-                <div class="col-xs-12 col-sm-2 mb-2">
-                    <button class="btn btn-success btn-block">Sign Up</button>
-                </div>
+    <div class="container mb-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="text-center">Sign Up</h1>
             </div>
-        </form>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6">
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="username" placeholder="username">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" name="password" placeholder="password">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="firstName" placeholder="first name">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="lastName" placeholder="last name">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" placeholder="email: john@doe.com">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="avatar" placeholder="avatar image url">
+                    </div>
+                    <div class="form-group">
+                        <!-- <input class="form-control" type="text" name="desc" placeholder="your profile description"> -->
+                        <textarea class="form-control" name="desc" cols="30" rows="10" placeholder="your profile description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="adminCode" placeholder="To become an admin fill out the admin code if you have one">
+                    </div>    
+                    <div class="form-group">
+                        <button class="btn btn-success btn-block">Sign Up</button>
+                    </div>
+                </form>
+                <a href="/campgrounds">< Go Back</a>
+            </div>
+        </div>
     </div>
 </main>
 

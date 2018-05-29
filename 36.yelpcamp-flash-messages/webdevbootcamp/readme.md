@@ -1,5 +1,9 @@
-#YelpCamp
+#YelpCamp Demo App Startup
+From the Command Line:
+* Run with npm run start:dev for development
+* Run with npm run start for production
 
+#YelpCamp
 * Add Landing Page
 * Add Campgrounds Page that lists all campgrounds
 
@@ -178,3 +182,15 @@ Comment Destroy Route: /campgrounds/:id/comments/:comment_id
 * Demo working version
 * Install and configure connect-flash
 * Add bootstrap alerts to header
+
+#Added Password Reset
+* In routes/index.js configure mail settings to send mail
+* To set mail's account password set: export GMAILPW=password in your terminal in the root
+
+#Added Search
+
+#Added Image Upload
+* Create image upload account at cloudinary.com
+* set in terminal root: 
+    export CLOUDINARY_API_KEY=your-api-key
+    export CLOUDINARY_API_SECRET=your-api-secret
